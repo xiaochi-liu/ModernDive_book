@@ -23,9 +23,9 @@ moderndive.pdf
 *.log
 *.out
 *.toc
-bib/packages.bib
+# bib/packages.bib
 purl.Rout
-#docs/*
+docs/*
 
 # other files
 .httr-oauth
