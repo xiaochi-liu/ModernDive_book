@@ -263,7 +263,7 @@ resample_mean <- pennies_resample %>%
   summarize(mean_year = mean(year))
 ```
 
-We obtained a different mean year of `r resample_mean %>% pull(mean_year) %>% round(2)`. This variation is induced by the resampling *with replacement* we performed earlier.
+We obtained a different mean year of 1994.82? or `r resample_mean %>% pull(mean_year) %>% round(2)`. This variation is induced by the resampling *with replacement* we performed earlier.
 
 What if we repeated this resampling exercise many times? Would we obtain the same mean `year` each time? In other words, would our guess at the mean year of all pennies in the US in 2019 be exactly `r resample_mean %>% pull(mean_year) %>% round(2)` every time? Just as we did in Chapter \@ref(sampling), let's perform this resampling activity with the help of some of our friends: 35 friends in total.
 
